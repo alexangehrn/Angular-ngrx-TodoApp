@@ -1,0 +1,16 @@
+<div *ngIf="detailTodo != 'undefined'">
+  <header>
+    <h1 class="topMargin">
+      {{ detailTodo.title }}
+    </h1>
+  </header>
+  <section class="topMargin">
+    <p>{{ detailTodo.description }}</p>
+    <p *ngIf="detailTodo.complete; then done else notdone"></p>
+    <ng-template #done><p class="alert alert-success">This tasks has been done</p></ng-template>
+    <ng-template #notdone><p class="alert alert-danger">This tasks has not been done yet</p></ng-template>
+  </section>
+</div>
+<section class="topMargin">
+  <button routerLink="/todo" class="btn btn-primary"> Back to TodoList </button>
+</section>

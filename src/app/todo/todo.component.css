@@ -1,0 +1,28 @@
+h1{
+  text-align: center ;
+  margin-top: 40px ;
+}
+
+.topMargin{
+  margin-top: 40px ;
+}
+
+.topSmallMargin{
+  margin-top: 10px ;
+}
+
+.title{
+ padding-top :5px ;
+}
+
+.check span{
+  padding-top :5px ;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color:red;
+}
